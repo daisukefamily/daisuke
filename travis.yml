@@ -1,6 +1,4 @@
-language: java
-jdk:
-    - oraclejdk9
-install:
-    - mvn clean
-    - mvn package
+language: node_js
+node_js:
+  - "iojs"
+  - "7"
