@@ -1,0 +1,98 @@
+\documentclass[uplatex,twocolumn,dvipdfmx,10pt]{jsarticle}
+\usepackage[top=22mm,bottom=22mm,left=28.8mm,right=28.8mm]{geometry}
+\renewcommand{\baselinestretch}{0.9}
+\setlength{\columnsep}{10mm}
+\usepackage[T1]{fontenc}
+\usepackage{txfonts}
+\usepackage[deluxe,jis2004]{otf}
+\usepackage[hiresbb]{graphicx}
+\usepackage{hyperref}
+\usepackage{pxjahyper}
+\usepackage{secdot}
+\makeatletter
+\g@addto@macro{\UrlBreaks}{\UrlOrds}
+\makeatother
+
+
+
+
+%タイトルと学生番号，氏名だけ編集する．
+\title{\vspace{-5mm}\fontsize{14pt}{0pt}\selectfont 研究タイトル}
+\author{\normalsize プロジェクトマネジメントコース　矢吹研究室　1742111　氏名　村田大輔}
+\date{}
+\pagestyle{empty}
+\begin{document}
+\maketitle
+
+
+
+原稿は，以下にあるような箇条書きではなく，散文（通常の文章）で書くこと．
+ただし，それが適切な場合には，箇条書きを使ってもよい．
+
+\section{序論}
+
+この節は次のように書く．
+
+\begin{enumerate}
+\item 青空文庫は誰にでもアクセスできる自由な電子本を,図書館のようにインターネット上に集めようとする活動である.著作権の消滅した作品と,「自由に読んでもらってかまわない」とされたものを,テキストとＸＨＴＭＬ（一部はＨＴＭＬ）形式に電子化した上で揃えてある.そこで青空文庫を利用し,青空文庫ができた当初と今でどのような違いがあるかを検証する.
+\item 過去の研究では小説の文章から感情を読み取ることで,感情を付与する本の読み聞かせロボットの構築に利用するという研究も行われている.
+\item PythonのJupyter NotebookとWSLのUbuntuを用いることで一つの文章を
+感情分析することができる.感情分析された文章は,ポジティブ度(p),ネガティブ度(n),ニュートラル(e)の3つにわけることができる.これを使い青空文庫の年代別の小説を人気ランキング順から感情分析をし書記と現代でどのような移り変わりがあるかを調べる.
+\item 現代と初期でのどのような内容の本が好まれていたかが比較できる.
+\end{enumerate}
+
+
+
+\section{手法}
+
+「序論」で書いた手法について，詳しく説明する．（主に現在形で）
+
+\begin{itemize}
+\item 以下の手順で研究を進める
+\item 1 青空文庫のアクセスランキングの機能を使い1位から順に感情分析をしていく,感情分析の基準は日本語評価極性辞書を使うものとする
+\item 2 感情分析されたものをまとめ,データ化をし,グラフなどにまとめる.
+\item 3 それぞれ順位ごとに小分けして,時代の移り変わりを細部まで記録する.
+\end{itemize}
+
+
+
+\section{結果(想定S)}
+
+
+得られた結果を客観的に書く．（主に過去形で）
+
+\begin{itemize}
+\item 課題研究企画書と中間審査概要で，結果がまだ出ていない場合は，節見出しを「結果（想定）」とし，主に現在形で書く．
+\item 「よい結果だった」というような主観的なことは書かない．
+\item 結果を統計処理した場合，その結果もここに書く．
+\end{itemize}
+
+
+
+\section{考察}
+
+結果から考察されることを書く．（主に現在形で）
+
+\begin{itemize}
+\item 課題研究企画書と中間審査概要で，結果がまだ出ていない場合は，節見出しを「考察（想定）」とする．
+\item 客観的に書いた方がいいが，主観的な内容を含めてもよい．
+\end{itemize}
+
+
+
+\section{結論}
+
+全体のまとめを書く．（主に過去形で）
+
+\begin{itemize}
+\item 課題研究企画書と中間審査概要では，節見出しを「進捗状況と今後の計画」とする．
+\item ここで初めて出てくる話題はない方がよい．（最後に「今後の課題」を書く場合は，その導入を「考察」でしておいた方がいいだろう．）
+\end{itemize}
+
+
+参考文献を適宜入れること（詳細はチェックリストを参照）\cite{weko_187907_1}．
+
+\bibliographystyle{junsrt}
+\bibliography{biblio}
+
+\end{document}
